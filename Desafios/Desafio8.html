@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Estrutura Seleção 03</title>
+    <style>
+        body{
+            background-color: aqua;
+            color: black;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: rgb(199, 20, 20);
+        }
+    </style>
+</head>
+<body>
+    <h1>Preço das Maçãs</h1>
+    <script>
+        const maça_varejo = 0.30
+        const maça_atacado = 0.25
+
+        var quantidade_maça = window.prompt('Quantas maçãs você deseja comprar ?')
+        if(quantidade_maça > 12){
+            var preço1 = quantidade_maça * maça_atacado 
+            document.write(`O preço total das maçãs serão: R$${preço1.toFixed(2)}`)
+        }else{
+            var preço2 = quantidade_maça * maça_varejo
+            document.write(`O preço total das maçãs serão: R$${preço2.toFixed(2)}`)
+        }
+
+    </script>
+</body>
+</html>

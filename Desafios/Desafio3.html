@@ -1,0 +1,13 @@
+<html>
+    <script type ='text/javascript'>
+         // input
+         let texto = prompt('Cole o texto aqui: ');
+            let termo = prompt('Digite um termo de busca: ');
+            // encontrando o inicio do trecho que contem a palavra da busca
+            let inicio = texto.indexOf(termo);
+            // formando o trecho
+            let trecho = texto.slice(inicio, inicio + 100);
+            // mostrando na pagina 
+            document.write('RESULTADO: ' + '"[...]' + trecho + '[...]"');
+    </script>
+</html>

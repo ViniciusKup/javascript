@@ -1,0 +1,20 @@
+<html>
+    <script type='text/javascript'>
+    // input
+        let texto = prompt('Cole o texto aqui: ');
+        let termo = prompt('Digite um termo de busca: ');
+        // deixando tudo minusculo, para padronizar a busca
+        texto_minusculo = texto.toLowerCase();
+        termo_minusculo = termo.toLowerCase();
+        // encontrando o pivo da busca
+        let pivo = texto_minusculo.indexOf(termo_minusculo);
+        // encontrando o inicio da frase
+        let inicio = texto_minusculo.slice(0, pivo).lastIndexOf('.') + 1;
+        // encontrando o final da frase
+        let final = texto_minusculo.slice(pivo).indexOf('.') + 1;
+        // formando o trecho de interesse
+        let trecho = texto.slice(inicio, pivo + final);
+        // mostrando na pagina 
+        document.write('RESULTADO: ' + '"' + trecho + '"');
+    </script>
+</html>
